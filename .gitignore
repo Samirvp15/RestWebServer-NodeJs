@@ -3,6 +3,6 @@
 
 /.env
 /keys
-
+dist/
 /postgres
  
