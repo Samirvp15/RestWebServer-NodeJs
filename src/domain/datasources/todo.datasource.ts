@@ -3,6 +3,8 @@ import { TodoEntity } from "../entities/todo.entity";
 
 
 export abstract class TodoDataSource{
+
+    
     abstract create(createTodoDto: CreateTodoDto): Promise<TodoEntity>;
 
     //todo Paginacion
@@ -13,7 +15,7 @@ export abstract class TodoDataSource{
 
     abstract updateById(updateTodoDto: UpdateTodoDto): Promise<TodoEntity>;
 
-    abstract updateById(id: number): Promise<TodoEntity>;
+    abstract deletedById(id: number): Promise<TodoEntity>;
 
 
 
